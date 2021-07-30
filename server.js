@@ -8,6 +8,6 @@ app.use(express.json());
 const port = process.env.PORT;
 
 app.use('/', router);
-app.listen(port || 8080, () => {
+app.listen(port || 8080, async () => {
     console.log(`Listening on port ${port}`);
 });
